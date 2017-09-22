@@ -5,7 +5,7 @@ Performance is crucial in today's web applications. A slow app feels buggy to th
 Although performance is such an important topic, there are so many optimization vectors that it's easy to forget some of them.
 The intent of this checklist is to gather performance practices to apply when developing a web application.
 
-Contributions and stars are welcome 🙌
+Contributions and stars are welcome 🙏
 
 While you apply these practices, you should always keep the following rules in mind:
 
