@@ -17,9 +17,9 @@ While you apply these practices, you should always keep the following rules in m
 ## Table of Contents
 
 - [Think about performance when building your tech stack](#think-about-performance-when-building-your-tech-stack)
-- [Frontend](#frontend)
-- [Backend](#backend)
-- [Database](#database)
+- [Frontend](#frontend-1)
+- [Backend](#backend-1)
+- [Database](#database-1)
 - [Network and Infrastructure](#network-and-infrastructure)
 - [Measuring](#measuring)
 - [Misc](#misc)
