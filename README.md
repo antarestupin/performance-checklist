@@ -94,7 +94,7 @@ You can use prefetching to prepare the browser to next requests and make them fa
 
 ### Optimize time to rendering
 
-Ideally the critical code should fit in 14Kb in order to be server in the first roundtrip. These techniques help to achieve this goal.
+Ideally the critical code should fit in 14KB in order to be server in the first TCP roundtrip ([why 14KB?](https://tylercipriani.com/blog/2016/09/25/the-14kb-in-the-tcp-initial-window/)). These techniques help to achieve this goal.
 
 - [ ] **Inline critical CSS** in the `<head>` of your pages
     - Tools like [CriticalCSS](https://github.com/filamentgroup/criticalCSS) and [critical](https://github.com/addyosmani/critical) can help you defining your site's critical CSS
