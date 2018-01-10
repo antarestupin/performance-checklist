@@ -1,5 +1,7 @@
 # Web Application Performance Checklist
 
+[![Awesome Checklist](https://img.shields.io/badge/Awesome-Checklist-blue.svg)](http://checklist.yingjiehu.com/)
+
 Performance is crucial in today's web applications. A slow app feels buggy to the users and make them flee it.
 
 Although performance is such an important topic, there are so many optimization vectors that it's easy to forget some of them.
