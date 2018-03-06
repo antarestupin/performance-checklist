@@ -18,6 +18,7 @@ While you apply these practices, you should always keep the following rules in m
 
 ## Table of Contents
 
+- [Set your objectives](#set-your-objectives)
 - [Think about performance when building your tech stack](#think-about-performance-when-building-your-tech-stack)
 - [Frontend](#frontend-1)
 - [Backend](#backend-1)
@@ -27,20 +28,28 @@ While you apply these practices, you should always keep the following rules in m
 - [Misc](#misc)
 
 
+## Set your objectives
+
+- [ ] Define the **performance metrics and objectives** that are important to your business
+    - The [RAIL model](https://developers.google.com/web/fundamentals/performance/rail) is generally a good model to start with.
+    - If speed is an advantage you want to have against competitors, know that users usually will feel you are faster if you are at least 20% faster than them.
+- [ ] Plan out a **loading sequence**; this way you can define early what is really important in your content, what to load first and what to load later
+- [ ] Make a **performance budget**
+    - The [performance budget calculator](http://www.performancebudget.io) is useful to estimate your budget depending on the performance you want to obtain. [This one](https://codepen.io/bradfrost/full/EPQVBp) is nice too.
+    - Remember that this budget takes compression in account.
+    - Currently the recommended budget is [max. 170kb gzipped](https://infrequently.org/2017/10/can-you-afford-it-real-world-web-performance-budgets/), but it really depends mostly on your user-centric objectives
+
 ## Think about performance when building your tech stack
 
 Before beginning to build your app, you should have some preparation in order to ease your work on performance later.
 
 ### Frontend
 
-- [ ] Make a **performance budget**
-    - The [performance budget calculator](http://www.performancebudget.io) is useful to estimate your budget depending on the performance you want to obtain. [This one](https://codepen.io/bradfrost/full/EPQVBp) is nice too.
-    - Remember that this budget takes compression in account.
 - [ ] If choosing between SPA frameworks, **take in account features like server side rendering**; these features will be hard to add later
 - [ ] Take in account **how much every library / framework will take on your performance budget**; don't use too much of them
 - [ ] **Make sure you need custom fonts** before using them
     - [This article](https://hackernoon.com/web-fonts-when-you-need-them-when-you-dont-a3b4b39fe0ae) can help you
-- [ ] Consider **[AMP](https://www.ampproject.org/fr/)** and **[Instant Articles](https://instantarticles.fb.com/)**, but be aware of their pros and cons
+- [ ] Consider technologies like **[AMP](https://www.ampproject.org/fr/)** and **[Instant Articles](https://instantarticles.fb.com/)**, but be aware of their pros and cons
     - Keep also in mind these solutions are not mandatory to obtain correct performances.
 
 ### Backend
@@ -70,7 +79,7 @@ Images represent in average ~60% of a page's weight, thus it's an important part
 
 ### Reduce code size
 
-- [ ] **Minize** the source code
+- [ ] **Minimize** the source code
 - [ ] Use **tree shaking** (e.g. with [webpack](https://webpack.js.org/)) to remove unused code
 - [ ] If your bundled code file is too big, use **code splitting** to load only what's needed first and lazy load the rest
 
@@ -180,6 +189,7 @@ User perceived performance is often disregarded but can be more important than a
 ## Network and Infrastructure
 
 - [ ] Serve static content using a **CDN** to shorten the distance between the client and the server
+    - When using your CDN take into consideration features like HTTP/2 support, compression...
 - [ ] Deploy your app on **several datacenters**, also to shorten the distance between the client and the server
 - [ ] Serve resources compressed using **Brotli** if it's supported, **Gzip** otherwise
 - [ ] Compress resources that are rarely changed using **Zopfli**
