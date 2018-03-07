@@ -195,6 +195,7 @@ User perceived performance is often disregarded but can be more important than a
 - [ ] Compress resources that are rarely changed using **Zopfli**
 - [ ] Use **HTTP/2** and its features like **server push** and enable **HPACK** to compress HTTP headers
 - [ ] Use **OCSP stapling** to fasten TLS shaking
+- [ ] Use **[0-RTT resumption](https://blog.cloudflare.com/introducing-0-rtt/)** to avoid round trips during TLS negotiations
 - [ ] **Avoid redirects** as they increase the number of needed requests
 - [ ] If using a microservices architecture, **bring services needing each other often closer**, ideally in the same machine
     - Kubernetes' pods can help achieve this goal
