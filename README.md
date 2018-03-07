@@ -207,6 +207,7 @@ User perceived performance is often disregarded but can be more important than a
 - [ ] Measure client side performance **by country**; results may hugely differ from one to another
 - [ ] Use tools like [Lighthouse](https://developers.google.com/web/tools/lighthouse/) to **audit** your site
 - [ ] **Load test** your servers as they probably won't have same perfs under 10rps and 1000rps
+    - [Gatling](https://gatling.io/) and [Locust](https://locust.io/) are good tools to perform these tests.
 - [ ] Keep track of **queries to the databases** to ease slow queries discovery
 
 
