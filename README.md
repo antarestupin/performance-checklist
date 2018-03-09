@@ -153,6 +153,7 @@ User perceived performance is often disregarded but can be more important than a
 - [ ] Use relevant **data structures**
 - [ ] Don't overuse **serialization**
 - [ ] **Generate static content when deploying** so that it will be computed only once
+- [ ] If possible, use [jemalloc](http://jemalloc.net/) to improve memory allocation
 
 ### Cache
 
@@ -185,6 +186,7 @@ User perceived performance is often disregarded but can be more important than a
 - [ ] Once you are sure the used DBMS is the good one for your needs, **take advantage of its advanced features** (e.g. materialized views in Oracle, hyperloglogs in Redis...)
 - [ ] **Don’t use ORM for complex queries**, unless you know what you’re doing
 - [ ] If possible, **defer heavy tasks** to moments of the day where there is less load on the database (at night for example) to save resources when needed
+- [ ] If possible, enable [jemalloc](http://jemalloc.net/) to improve memory allocation
 
 
 ## Network and Infrastructure
