@@ -187,6 +187,7 @@ User perceived performance is often disregarded but can be more important than a
 - [ ] **Don’t use ORM for complex queries**, unless you know what you’re doing
 - [ ] If possible, **defer heavy tasks** to moments of the day where there is less load on the database (at night for example) to save resources when needed
 - [ ] If possible, enable [jemalloc](http://jemalloc.net/) to improve memory allocation
+- [ ] If using UUIDs, reorder them before storing them; more explanations [here](https://www.percona.com/blog/2014/12/19/store-uuid-optimized-way/)
 
 
 ## Network and Infrastructure
