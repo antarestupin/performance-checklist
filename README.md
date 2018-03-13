@@ -188,6 +188,8 @@ User perceived performance is often disregarded but can be more important than a
 - [ ] If possible, **defer heavy tasks** to moments of the day where there is less load on the database (at night for example) to save resources when needed
 - [ ] If possible, enable [jemalloc](http://jemalloc.net/) to improve memory allocation
 - [ ] If using UUIDs, reorder them before storing them; more explanations [here](https://www.percona.com/blog/2014/12/19/store-uuid-optimized-way/)
+- [ ] Try different storage engines
+    - On many DBMSs [RocksDB](http://rocksdb.org/) often gives interesting results.
 
 
 ## Network and Infrastructure
