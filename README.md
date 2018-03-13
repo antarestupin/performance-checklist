@@ -136,10 +136,10 @@ User perceived performance is often disregarded but can be more important than a
 - [ ] Instead you can use **animations** to illustrate the transitions following user's action, for example transition from a page to another
 - [ ] Show **app shell before content** if needed; more explanations [here](https://developers.google.com/web/fundamentals/architecture/app-shell)
 - [ ] If using JPG images, you can use **progressive JPGs** to improve their loading perception
-- [ ] Blur version or background color of lazy loaded images until they're loaded
 - [ ] If not using especially JPG, you can **replace your images by cheaper components** until they are loaded
-    - You can replace an image by a canvas filled with its main color
+    - You can replace an image by a canvas filled with its main color.
     - You can replace an image by a very lightweight, blurred version of it. This efficient technique is explained in [this article](https://code.facebook.com/posts/991252547593574/the-technology-behind-preview-photos/) from Facebook.
+    - You can also simply use a low-quality version of it.
 - [ ] Make an **optimistic UI** to make some interactions feel instant; a quick explanation can be found [here](https://uxplanet.org/optimistic-1000-34d9eefe4c05)
 
 
