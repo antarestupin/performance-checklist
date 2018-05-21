@@ -47,6 +47,7 @@ Before beginning to build your app, you should have some preparation in order to
 
 - [ ] If choosing between SPA frameworks, **take in account features like server side rendering**; these features will be hard to add later
 - [ ] Take in account **how much every library / framework will take on your performance budget**; don't use too much of them
+    - [Bundlephobia](https://bundlephobia.com) can help you estimate the size of a new dependency.
 - [ ] **Make sure you need custom fonts** before using them
     - [This article](https://hackernoon.com/web-fonts-when-you-need-them-when-you-dont-a3b4b39fe0ae) can help you
 - [ ] Consider technologies like **[AMP](https://www.ampproject.org/fr/)** and **[Instant Articles](https://instantarticles.fb.com/)**, but be aware of their pros and cons
