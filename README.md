@@ -26,6 +26,7 @@ While you apply these practices, you should always keep the following rules in m
 - [Network and Infrastructure](#network-and-infrastructure)
 - [Measuring](#measuring)
 - [Misc](#misc)
+- [Specialized checklists](#specialized-checklists)
 
 
 ## Set your objectives
