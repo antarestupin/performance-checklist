@@ -183,6 +183,8 @@ User perceived performance is often disregarded but can be more important than a
  [here](http://use-the-index-luke.com/sql/partial-results/fetch-next-page)
 - [ ] **Tune** the DB; tools like [MySQLTuner](https://github.com/major/MySQLTuner-perl) and the experimental [OtterTune](https://github.com/cmu-db/ottertune) can help you
 - [ ] **Identify & optimize critical and slow queries** (e.g. code that produces n+1 queries)
+  - In most SQL databases, `EXPLAIN` can help by showing the execution plan for a query
+  - In PostgreSQL, `EXPLAIN ANALYZE` can help further by executing the explained query
 - [ ] If using pagination, **use last row instead of `offset`** as a starting point; more explanations [here](http://use-the-index-luke.com/)
 - [ ] Once you are sure the used DBMS is the good one for your needs, **take advantage of its advanced features** (e.g. materialized views in Oracle, hyperloglogs in Redis...)
 - [ ] **Don’t use ORM for complex queries**, unless you know what you’re doing
@@ -222,3 +224,9 @@ User perceived performance is often disregarded but can be more important than a
 ## Misc
 
 - [ ] Keep your **dependencies up-to-date** as their performance is often improved by their maintainers
+
+
+## Specialized checklists
+
+- [PostgreSQL](https://severalnines.com/blog/performance-cheat-sheet-postgresql)
+- [Angular](https://github.com/mgechev/angular-performance-checklist)
