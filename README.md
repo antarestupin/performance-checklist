@@ -84,6 +84,9 @@ Images represent in average ~60% of a page's weight, thus it's an important part
 - [ ] **Minimize** the source code
 - [ ] Use **tree shaking** (e.g. with [webpack](https://webpack.js.org/)) to remove unused code
 - [ ] If your bundled code file is too big, use **code splitting** to load only what's needed first and lazy load the rest
+- [ ] Serve ES2015 code to browsers supporting it and ES5 code to browsers that don't using `type="module"` and `nomodule`
+  - This can improve the bundle size and parsing time
+  - The technique is described [here](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/)
 
 ### Reduce number of requests
 
