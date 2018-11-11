@@ -78,15 +78,14 @@ Images represent in average ~60% of a page's weight, thus it's an important part
 - [ ] Use **responsive images** with `img`'s' `srcset` and `size` attributes
 - [ ] **Optimize** manually **important images** or script their optimization
 - [ ] **Lazy load** images
+- [ ] Replacing animated **gifs by videos** can reduce their size dramatically (details [here](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video/))
 
 ### Reduce code size
 
 - [ ] **Minimize** the source code
 - [ ] Use **tree shaking** (e.g. with [webpack](https://webpack.js.org/)) to remove unused code
 - [ ] If your bundled code file is too big, use **code splitting** to load only what's needed first and lazy load the rest
-- [ ] Serve ES2015 code to browsers supporting it and ES5 code to browsers that don't using `type="module"` and `nomodule`
-  - This can improve the bundle size and parsing time
-  - The technique is described [here](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/)
+- [ ] Serving **ES2015 code to browsers supporting it** and ES5 code to browsers that don't, using `type="module"` and `nomodule`, can improve the bundle size and parsing time (details [here](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/))
 
 ### Reduce number of requests
 
@@ -228,6 +227,7 @@ User perceived performance is often disregarded but can be more important than a
 ## Misc
 
 - [ ] Keep your **dependencies up-to-date** as their performance is often improved by their maintainers
+- [ ] Take in account the **[`Save-Data`](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/save-data/)** request header to serve lighter assets to clients with limited resources
 
 
 ## Specialized checklists
