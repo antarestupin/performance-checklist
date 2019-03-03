@@ -38,7 +38,7 @@ While you apply these practices, you should always keep the following rules in m
 - [ ] Make a **performance budget**
     - The [performance budget calculator](http://www.performancebudget.io) is useful to estimate your budget depending on the performance you want to obtain. [This one](https://codepen.io/bradfrost/full/EPQVBp) is nice too.
     - Remember that this budget takes compression in account.
-    - Currently the recommended budget is [max. 170kb gzipped](https://infrequently.org/2017/10/can-you-afford-it-real-world-web-performance-budgets/), but it really depends mostly on your user-centric objectives
+    - Currently the recommended budget is [max. 170kb gzipped, 130kb if JS heavy](https://infrequently.org/2017/10/can-you-afford-it-real-world-web-performance-budgets/), but it really depends mostly on your user-centric objectives
 
 ## Think about performance when building your tech stack
 
